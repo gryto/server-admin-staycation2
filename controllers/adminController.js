@@ -561,7 +561,6 @@ module.exports= {
           const booking = await Booking.find()
             .populate('memberId')
             .populate('bankId');
-          console.log(booking);
           res.render('admin/booking/view_booking', {
             title: "Staycation | Booking",
             user: req.session.user,
@@ -581,7 +580,7 @@ module.exports= {
           const booking = await Booking.findOne({ _id: id })
             .populate('memberId')
             .populate('bankId');
-            console.log(booking);
+    
     
           res.render('admin/booking/show_detail_booking', {
             title: "Staycation | Detail Booking",
