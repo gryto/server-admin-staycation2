@@ -18,7 +18,6 @@ seeder.connect('mongodb+srv://anifjrn:staycation2@cluster0.agb9i.mongodb.net/db_
     './model/Activity',
     './model/Member',
     './model/Image',
-    './model/Member',
     './model/Booking',
     './model/Users'
   ]);
