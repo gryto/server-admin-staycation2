@@ -57,7 +57,7 @@ describe('API ENDPOINT TESTING', () => {
     const image = __dirname + '/buktibayar.jpeg';
     const dataSample = {
       image,
-      idItem: '5e96cbe292b97300fc902223',
+      itemId: '5e96cbe292b97300fc902223',
       duration: 2,
       bookingStartDate: '9-4-2021',
       bookingEndDate: '12-4-2021',
@@ -70,7 +70,7 @@ describe('API ENDPOINT TESTING', () => {
     }
     chai.request(app).post('/api/v1/member/booking-page')
       .set('Content-Type', 'application/x-www-form-urlencoded')
-      .field('idItem', dataSample.idItem)
+      .field('itemId', dataSample.itemId)
       .field('duration', dataSample.duration)
       .field('bookingStartDate', dataSample.bookingStartDate)
       .field('bookingEndDate', dataSample.bookingEndDate)
