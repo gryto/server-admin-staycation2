@@ -138,7 +138,7 @@ var data = [
           // done
           { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90cdb5') },
           // done
-          { _id: mongoose.Types.ObjectId('5e96cbe292b97300fc90cdb6') }
+          { _id: ose.Types.ObjectId('5e96cbe292b97300fc90cdb6') }
         ],
         featureId: [
           // done

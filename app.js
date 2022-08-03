@@ -27,6 +27,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(methodOverride('_method'));
+app.enable("trust proxy");
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
