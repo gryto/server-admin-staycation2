@@ -23,4 +23,15 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
 artifacts:
   files:
-    - imageDetail.json
+    - app.js
+    - bin
+    - controllers
+    - middlewares
+    - model
+    - public
+    - routes
+    - views
+    - package.json
+    - seed.js
+    - test
+    
