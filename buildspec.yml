@@ -34,4 +34,11 @@ artifacts:
     - package.json
     - seed.js
     - test
-    
+  secondary-artifacts:
+    DefinitionArtifact:
+      files:
+        - appspec.yaml
+        - taskdef.json
+    ImageArtifact:
+      files:
+        - imageDetail.json
