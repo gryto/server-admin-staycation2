@@ -5,5 +5,5 @@ Resources:
      Properties:
        TaskDefinition: <TASK_DEFINITION>
        LoadBalancerInfo:
-         ContainerName: db_staycation2
+         ContainerName: db_staycation3
          ContainerPort: 3000
