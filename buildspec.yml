@@ -21,7 +21,7 @@ phases:
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - printf '{"ImageURI":"image_URI"}' > imageDetail.json
+      - printf '{"ImageURI":"837347870395.dkr.ecr.us-east-1.amazonaws.com/db_staycation3"}' > imageDetail.json
 artifacts:
   files:
     - app.js
