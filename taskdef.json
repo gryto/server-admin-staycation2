@@ -37,7 +37,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "837347870395.dkr.ecr.us-east-1.amazonaws.com/db_staycation3",
+      "image": "IMAGE1_NAME",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
