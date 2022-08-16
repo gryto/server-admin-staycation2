@@ -34,7 +34,6 @@ artifacts:
     - views
     - package.json
     - seed.js
-    - test
   secondary-artifacts:
     DefinitionArtifact:
       files:
