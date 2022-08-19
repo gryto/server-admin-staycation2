@@ -13,12 +13,14 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+      - docker build -t --only=production $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --push
+      - docker push $REPOSITORY_URI:latest
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
       - printf '{"ImageURI":"837347870395.dkr.ecr.us-east-1.amazonaws.com/db_staycation4"}' > imageDetail.json
       - cat imageDetail.json
 artifacts:
