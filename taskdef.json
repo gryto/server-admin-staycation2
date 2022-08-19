@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/staycation4",
+          "awslogs-group": "/ecs/staycation5",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "staycation4-cont"
+      "name": "staycation5"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:837347870395:task-definition/staycation4:1",
-  "family": "staycation4",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:837347870395:task-definition/staycation5:1",
+  "family": "staycation5",
   "requiresAttributes": [
     {
       "targetId": null,
