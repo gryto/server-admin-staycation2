@@ -5,5 +5,5 @@ Resources:
      Properties:
        TaskDefinition: "arn:aws:ecs:us-east-1:837347870395:task-definition/staycation5:1"
        LoadBalancerInfo:
-         ContainerName: "staycation5-bluegreen"
+         ContainerName: "staycation5"
          ContainerPort: 3000
