@@ -3,7 +3,7 @@ Resources:
  - TargetService:
      Type: AWS::ECS::Service
      Properties:
-       TaskDefinition: <TASK_DEFINITION>
+       TaskDefinition: arn:aws:ecs:us-east-1:837347870395:task-definition/staycation4:1
        LoadBalancerInfo:
          ContainerName: db_staycation4
          ContainerPort: 3000
