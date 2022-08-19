@@ -1,4 +1,4 @@
-FROM node:16.7.0-alpine
+FROM node:16.7.0-alpine as builder
 
 WORKDIR /app
 
@@ -8,7 +8,13 @@ RUN npm install --only=production
 
 RUN rm -rf node_modules
 
-COPY . .
+#####################################
+
+FROM node:16.7.0-alpine
+
+WORKDIR /app
+
+COPY --from=builder /app /app.
 
 EXPOSE 3000
 
