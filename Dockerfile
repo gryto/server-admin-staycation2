@@ -5,7 +5,7 @@ COPY package.json package-lock.json ./
 RUN npm install --only=production
 RUN rm -rf node_modules
 
-###################################################
+####################################
 
 FROM node:16.7.0-alpine
 
