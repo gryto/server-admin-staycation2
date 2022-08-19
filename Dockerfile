@@ -7,6 +7,7 @@ RUN if [ "$NODE_ENV" = "development" ]; \
         then npm install; \
         else npm install --only=production; \
         fi
+RUN rm -rf node_modules
 
 ###################################################
 FROM node:16.7.0-alpine
