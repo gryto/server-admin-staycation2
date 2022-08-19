@@ -1,4 +1,4 @@
-FROM node:16.7.0-18-alpine3.15 as build
+FROM node:16.7.0-alpine3.15 as build
 
 WORKDIR /app
 COPY package.json package-lock.json ./
@@ -7,7 +7,7 @@ RUN rm -rf node_modules
 
 ###################################################
 
-FROM node:16.7.0-18-alpine3.15
+FROM node:16.7.0-alpine3.15
 
 COPY --from=build /app /app
 WORKDIR /app
