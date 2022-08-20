@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  node-app:
+    image: "837347870395.dkr.ecr.us-east-1.amazonaws.com/staycation6"
+    # stdin_open: true
+    # tty: true
+    build: .
+    ports:
+      - "3000:3000"
+    environment: 
+      - PORT=3000
+    # env_file:
+    #   - ./.env

@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 837347870395.dkr.ecr.us-east-1.amazonaws.com
-      - REPOSITORY_URI=837347870395.dkr.ecr.us-east-1.amazonaws.com/db_staycation5
+      - REPOSITORY_URI=837347870395.dkr.ecr.us-east-1.amazonaws.com/staycation6
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
@@ -21,7 +21,7 @@ phases:
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - printf '{"ImageURI":"837347870395.dkr.ecr.us-east-1.amazonaws.com/db_staycation5"}' > imageDetail.json
+      - printf '{"ImageURI":"837347870395.dkr.ecr.us-east-1.amazonaws.com/staycation6"}' > imageDetail.json
       - cat imageDetail.json
 artifacts:
   files:
