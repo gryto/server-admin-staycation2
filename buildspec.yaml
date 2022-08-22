@@ -35,6 +35,9 @@ artifacts:
     - views
     - package.json
     - seed.js
+    - image*.json
+    - appspec.yaml
+    - taskdef.json
   secondary-artifacts:
     DefinitionArtifact:
       files:
