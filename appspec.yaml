@@ -7,9 +7,3 @@ Resources:
        LoadBalancerInfo:
          ContainerName: "staycation6"
          ContainerPort: 3000
-Hooks:
-- BeforeInstall: "BeforeInstallHookFunctionName"
-- AfterInstall: "AfterInstallHookFunctionName"
-- AfterAllowTestTraffic: "AfterAllowTestTrafficHookFunctionName"
-- BeforeAllowTraffic: "BeforeAllowTrafficHookFunctionName"
-- AfterAllowTraffic: "AfterAllowTrafficHookFunctionName"
