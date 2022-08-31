@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/staycation622",
+          "awslogs-group": "/ecs/adminstaycation7-tugas",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -37,7 +37,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "<IMAGE1_NAME>",
+      "image": "IMAGE1_NAME",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "staycation6"
+      "name": "asminstaycation7"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:837347870395:task-definition/staycation622:1",
-  "family": "staycation622",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:837347870395:task-definition/adminstaycation7-tugas:1",
+  "family": "adminstaycation7-tugas",
   "requiresAttributes": [
     {
       "targetId": null,
