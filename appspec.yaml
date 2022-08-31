@@ -5,5 +5,5 @@ Resources:
      Properties:
        TaskDefinition: "arn:aws:ecs:us-east-1:837347870395:task-definition/adminstaycation7-tugas:1"
        LoadBalancerInfo:
-         ContainerName: "staycation6"
+         ContainerName: "asminstaycation7"
          ContainerPort: 3000
